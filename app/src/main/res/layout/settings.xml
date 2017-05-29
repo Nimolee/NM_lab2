@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/setting_deph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Розмірність на кожному рівні"
+                android:inputType="textCapSentences|textMultiLine"
+                android:scrollHorizontally="false" />
+
+            <EditText
+                android:id="@+id/setting_ep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Кількість епох" />
+
+            <EditText
+                android:id="@+id/learnSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Швидкість навчання" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Коефіцієнт інертності" android:id="@+id/coefInerc"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="Ok" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
